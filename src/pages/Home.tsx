@@ -1,11 +1,14 @@
 import React from "react";
+import HeroSection from "../containers/HeroSection";
+import ServicesSection from "../containers/ServicesSection";
+import WhyUsSection from "../containers/WhyUsSection";
 
 const Home = (): JSX.Element => {
   return (
     <>
-      <section>hero</section>
-      <section>why us</section>
-      <section>services</section>
+      <HeroSection />
+      <WhyUsSection />
+      <ServicesSection />
       <section>team</section>
       <section>clients</section>
       <section>news</section>

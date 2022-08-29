@@ -1,0 +1,29 @@
+
+
+
+.why__box-1 {
+  position: relative;
+}
+.why__box-1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("@img/ShieldBgIcon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  opacity: 0.15;
+}
+.why__box-4 {
+  position: relative;
+}
+.why__box-4::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("@img/StopShieldIcon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  opacity: 0.15;
+}

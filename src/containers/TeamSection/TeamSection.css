@@ -1,0 +1,20 @@
+.teams__pic1 {
+  @apply rounded-2xl;
+  width: 120px;
+  height: 300px;
+  background-image: url("@img/teams/coding.png");
+  background-size: auto 100%;
+  background-position: 68%;
+  background-color: #763bbf;
+  background-blend-mode: overlay;
+}
+.teams__pic2 {
+  @apply rounded-2xl;
+  width: 160px;
+  height: 300px;
+  background-image: url("@img/teams/browsing.png");
+  background-size: auto 100%;
+  background-position: 54%;
+  background-color: #019ffe;
+  background-blend-mode: overlay;
+}

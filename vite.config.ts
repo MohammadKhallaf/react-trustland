@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [reactRefresh()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
-      "@img": path.resolve(__dirname, "./src/assets/images"),
+      "@": path.resolve(__dirname, "src"),
+      "@img": path.resolve(__dirname, "src/assets/images"),
     },
   },
 });

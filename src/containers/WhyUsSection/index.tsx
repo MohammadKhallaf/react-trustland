@@ -2,13 +2,14 @@ import React from "react";
 import "./WhyUsSection.css";
 import WhyServicesImg from "@img/why-services.png";
 import WhyTrustImg from "@img/why-trust.png";
+import SectionHeader from "../../components/SectionHeader";
 
 const WhyUsSection = (): JSX.Element => {
   return (
     <section className="bg-slate-900 text-white py-5 ">
       <header className="container-spacing mx-auto flex flex-row gap-6">
         <div className="flex-1">
-          <h3 className="font-bold text-4xl header__line">لماذا ترست لاين؟</h3>
+          <SectionHeader>لماذا ترست لاين؟</SectionHeader>
           <p>
             نقدم خدمات احترافية في مجال الأمن السيبراني بأذرع وطنية تسعى لرفع
             مستوى الأمن في جميع الكيانات والمؤسسات

@@ -3,13 +3,20 @@ import codingImg from "@img/teams/coding.png";
 import "./TeamSection.css";
 const TeamSection = () => {
   return (
-    <section className="p-5">
-      <div className="grid">
-        <div className="col-start-1 col-span-1 teams__pic1"></div>
-        <div className="col-start-2 col-end-12 row-start-1 w-full bg-darkGray h-3/4 my-auto rounded-2xl sm:pr-[160px]">
-          <div>somffds</div>
+    <section className="py-5">
+      <div className="flex container-spacing">
+        <div className="teams__pic1 ml-3"></div>
+        <div className="teams__pic2 -ml-3"></div>
+        <div className="bg-lightGray my-auto rounded-2xl -z-[1] w-full pr-8 h-[250px] pl-[10%] flex flex-col justify-center">
+          <div className="header__line">
+            <h3 className="font-bold text-3xl">فريقنا</h3>
+          </div>
+          <p>
+            في ترست لاين، نقدم للعملاء الحلول التي تجعلهم ينمون بثقة لسنوات
+            قادمة.
+          </p>
+          <p>يعمل موظفونا بشغف واستقلالية وإتقان لخلق عمل نفخر به جميعًا.</p>
         </div>
-        <div className="col-start-2 col-span-1 row-start-1 teams__pic2"></div>
       </div>
     </section>
   );

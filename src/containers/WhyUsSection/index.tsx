@@ -36,7 +36,7 @@ const WhyUsSection = (): JSX.Element => {
               </p>
             </div>
             <div>
-              <img src={WhyServicesImg} alt="" />
+              <img src={WhyServicesImg} alt="" className="mr-auto" />
             </div>
           </div>
           {/* BOX 3 - trusted */}

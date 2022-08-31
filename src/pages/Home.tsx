@@ -1,6 +1,7 @@
 import React from "react";
 import ClientsSection from "../containers/ClientsSection";
 import HeroSection from "../containers/HeroSection";
+import NewsSection from "../containers/NewsSection";
 import ServicesSection from "../containers/ServicesSection";
 import TeamSection from "../containers/TeamSection";
 import WhyUsSection from "../containers/WhyUsSection";
@@ -13,7 +14,7 @@ const Home = (): JSX.Element => {
       <ServicesSection />
       <TeamSection />
       <ClientsSection />
-      <section>news</section>
+      <NewsSection />
     </>
   );
 };

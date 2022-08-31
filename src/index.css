@@ -4,13 +4,29 @@
 
 @layer components {
   .container-spacing {
-    @apply container px-8 mx-auto py-[80px];
+    @apply container px-8 mx-auto py-8 md:py-[80px];
+   
+  }
+
+  .nav_btn {
+    @apply rounded-full transition-colors duration-[250ms] hover:text-mainBlue hover:bg-slate-800 hover:bg-opacity-50 w-fit p-3;
   }
 }
 .header__line {
-  @apply relative pb-5;
+  @apply relative pb-5 mt-6;
 }
 .header__line::before {
   content: "";
   @apply absolute -top-3 right-0 bg-mainBlue w-14 h-1;
+}
+.hero-bg {
+  position: relative;
+  &::before {
+    content: "";
+    @apply absolute inset-0 -z-[1];
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), black),
+      url("@img/HeroBG.jpg");
+    background-color: black;
+    background-size: cover;
+  }
 }

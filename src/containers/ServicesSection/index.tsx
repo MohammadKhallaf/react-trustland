@@ -1,19 +1,21 @@
 import React from "react";
+import styles from "./ServicesSection.module.css";
+
 import ServiceCard from "../../components/ServiceCard";
+import SectionHeader from "../../components/SectionHeader";
+import SectionDiv from "../../components/SectionDiv";
 
 import peopleIcon from "@img/solutions/people.svg";
 import shieldIcon from "@img/solutions/shield.svg";
 import trendingUpIcon from "@img/solutions/trending-up.svg";
 import codeIcon from "@img/solutions/code.svg";
 import keyboardIcon from "@img/solutions/keyboard-open.svg";
-import SectionHeader from "../../components/SectionHeader";
-import SectionDiv from "../../components/SectionDiv";
 
 const ServicesSection = (): JSX.Element => {
   return (
-    <SectionDiv className="bg-black">
-      <div className=" bg-white rounded-3xl p-16 grid  md:grid-cols-2 grid-rows-3 gap-4">
-        <div>
+    <SectionDiv className={styles.bg} id="services" divClass="px-0 sm:px-8">
+      <div className="bg-white sm:shadow-md sm:rounded-3xl p-8  md:px-16 grid  md:grid-cols-2 grid-rows-3 gap-4 ">
+        <div className="flex flex-col justify-center">
           <SectionHeader>الخدمات والحلول</SectionHeader>
           <p>نقدم خدمات وحلول احترافية في مجال الأمن السيبراني</p>
         </div>

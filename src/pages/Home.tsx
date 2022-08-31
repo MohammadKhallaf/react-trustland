@@ -9,7 +9,6 @@ import WhyUsSection from "../containers/WhyUsSection";
 const Home = (): JSX.Element => {
   return (
     <>
-      <HeroSection />
       <WhyUsSection />
       <ServicesSection />
       <TeamSection />

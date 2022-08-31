@@ -34,7 +34,7 @@ interface Props {}
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const NewsSection = (props: Props) => {
   return (
-    <SectionDiv className="bg-black text-white">
+    <SectionDiv className="bg-black text-white" id="news">
       <SectionHeader>الأخبار</SectionHeader>
       <div className="flex flex-col gap-4">
         {newsArr.map((item, idx) => (

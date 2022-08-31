@@ -7,8 +7,7 @@ import SectionDiv from "../../components/SectionDiv";
 
 const WhyUsSection = (): JSX.Element => {
   return (
-
-    <SectionDiv className="bg-slate-900 text-white py-5 ">
+    <SectionDiv className="bg-black text-white py-5 " id="why">
       <header className=" mx-auto flex flex-row gap-6">
         <div className="flex-1">
           <SectionHeader>لماذا ترست لاين؟</SectionHeader>
@@ -17,7 +16,7 @@ const WhyUsSection = (): JSX.Element => {
             مستوى الأمن في جميع الكيانات والمؤسسات
           </p>
         </div>
-        <div className="flex-1"> </div>
+        <div className="flex-1 hidden md:block"> </div>
       </header>
       <div className="grid gap-6 mx-auto auto-rows-fr mt-5 ">
         <main className="contents">
@@ -64,7 +63,6 @@ const WhyUsSection = (): JSX.Element => {
         </main>
       </div>
     </SectionDiv>
- 
   );
 };
 

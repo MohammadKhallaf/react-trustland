@@ -1,5 +1,5 @@
 import React from "react";
-import logoSVG from "@/assets/images/TrustLogo.svg";
+import logoSVG from "@img/TrustLogo.svg";
 const Header = (): JSX.Element => {
   return (
     <header className="flex flex-row justify-around bg-black text-white py-3 align-baseline">

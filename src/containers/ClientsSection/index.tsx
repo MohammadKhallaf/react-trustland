@@ -1,5 +1,5 @@
 import React from "react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import styled from "styled-components/macro";
 import SectionHeader from "../../components/SectionHeader";
@@ -11,6 +11,7 @@ import MonshaatLogo from "@img/clients/monshaat-logo.png";
 import prevIcon from "@img/carousel/arrow-right.svg";
 import nextIcon from "@img/carousel/arrow-left.svg";
 import "swiper/css/navigation";
+import SectionDiv from "../../components/SectionDiv";
 
 const NavIcon = styled.img`
   height: 100px;
@@ -20,7 +21,7 @@ const NavIcon = styled.img`
 
 const ClientsSection = (): JSX.Element => {
   return (
-    <section className=" px-5 py-16 container-spacing">
+    <SectionDiv className=" px-5 py-16" id="clients">
       <SectionHeader>عملاؤنا</SectionHeader>
       <div className="flex flex-row">
         <button className="button-prev">
@@ -63,7 +64,7 @@ const ClientsSection = (): JSX.Element => {
           <NavIcon src={nextIcon} />
         </button>
       </div>
-    </section>
+    </SectionDiv>
   );
 };
 

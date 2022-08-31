@@ -4,7 +4,7 @@
 
 @layer components {
   .container-spacing {
-    @apply container px-8 mx-auto;
+    @apply container px-8 mx-auto py-[80px];
   }
 }
 .header__line {

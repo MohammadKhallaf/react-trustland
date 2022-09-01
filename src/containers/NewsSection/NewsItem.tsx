@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
+import NewsItemContainer from "../../components/NewsItemContainer";
 
 interface ImgProps {
   url: string;
@@ -24,7 +25,7 @@ interface Props {
 
 const NewsItem: React.FC<Props> = ({ img, title, description }) => {
   return (
-    <article className="flex flex-col md:flex-row bg-[#131414] p-5 rounded-xl hover:shadow-zinc-700 shadow-md transition-[box-shadow]">
+    <NewsItemContainer>
       <div className="basis-[150px] pb-5 md:pb-0 md:pl-5">
         <NewsImgDiv
           url={img}
@@ -37,7 +38,7 @@ const NewsItem: React.FC<Props> = ({ img, title, description }) => {
         <div className="text-slate-300 font-light text-md">{description}</div>
         <button className="text-mainBlue w-fit">اقرأ المقال &#x219c;</button>
       </div>
-    </article>
+    </NewsItemContainer>
   );
 };
 

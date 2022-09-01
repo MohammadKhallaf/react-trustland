@@ -16,7 +16,7 @@ const Footer = (): JSX.Element => {
   return (
     <footer className="bg-black text-white">
       <div className=" container-spacing">
-        <div className="border-t border-zinc-700 pt-5 flex flex-row justify-between gap-1">
+        <div className="border-t border-zinc-700 pt-5 flex flex-col md:flex-row justify-between gap-5 md:gap-1">
           <div className="flex flex-col gap-3 flex-1 justify-between">
             <div className="w-[90px]">
               <img src={logoSVG} />

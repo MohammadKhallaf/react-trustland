@@ -2,7 +2,10 @@ import React from "react";
 import SectionDiv from "../../components/SectionDiv";
 const HeroSection = (): JSX.Element => {
   return (
-    <SectionDiv className="text-white h-full grid place-items-center" id="hero">
+    <SectionDiv
+      className="text-white  grid place-items-center hero-bg h-screen"
+      id="hero"
+    >
       <div className="flex flex-col items-center gap-4 text-center">
         <h2 className="text-4xl font-bold">ترست لاين تقدم لأعمالك الحماية</h2>
         <p className="text-xs">

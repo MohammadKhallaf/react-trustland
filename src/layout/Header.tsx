@@ -4,6 +4,7 @@ import HeroSection from "../containers/HeroSection";
 import MenuIcon from "../components/Icons/MenuIcon";
 import MobileNav from "./Navbar/MobileNav";
 import NavListItem from "./Navbar/NavListItem";
+import { Route, Routes } from "react-router-dom";
 const initialState = { show: false };
 function reducer(state: any, action: any) {
   switch (action.type) {
@@ -19,7 +20,7 @@ function reducer(state: any, action: any) {
 const Header = (): JSX.Element => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
-    <header className="h-screen hero-bg">
+    <header className="min-h-[80px] md:min-h-[64px]">
       {/* Nav bar */}
       <div
         className="
@@ -52,7 +53,9 @@ const Header = (): JSX.Element => {
       </div>
       <MobileNav show={state.show} close={() => dispatch({ type: "hide" })} />
       {/* Hero section */}
-      <HeroSection />
+      <Routes>
+        <Route path="/" element={<HeroSection />} />
+      </Routes>
     </header>
   );
 };

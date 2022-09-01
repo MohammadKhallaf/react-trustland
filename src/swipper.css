@@ -6,9 +6,12 @@
 
 .swiper-slide {
   & > div {
-    @apply bg-lightGray w-[200px] h-[200px] flex justify-center items-center rounded-2xl;
+    @apply bg-lightGray
+    w-[100px] h-[100px]
+    sm:w-[150px] sm:h-[150px]
+    md:w-[200px] md:h-[200px] flex justify-center items-center rounded-2xl;
     & img {
-      @apply max-h-full  p-5;
+      @apply max-h-full p-3 md:p-5;
     }
   }
 }

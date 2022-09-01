@@ -21,7 +21,11 @@ const NavIcon = styled.img`
 
 const ClientsSection = (): JSX.Element => {
   return (
-    <SectionDiv className=" px-5 py-16" id="clients">
+    <SectionDiv
+      className=" px-5 py-16"
+      id="clients"
+      divClass="md:px-4 px-[1rem]"
+    >
       <SectionHeader>عملاؤنا</SectionHeader>
       <div className="flex flex-row">
         <button className="button-prev">
@@ -30,8 +34,8 @@ const ClientsSection = (): JSX.Element => {
 
         <Swiper
           modules={[Navigation]}
-          spaceBetween={50}
-          slidesPerView={3}
+          spaceBetween={10}
+          slidesPerView={2}
           loop={true}
           effect="cards"
           grabCursor
@@ -42,7 +46,11 @@ const ClientsSection = (): JSX.Element => {
           preloadImages={false}
           preventClicks={true}
           slidesOffsetAfter={50}
-          breakpoints={{}}
+          breakpoints={{
+            500: {
+              slidesPerView: 3,
+            },
+          }}
         >
           <SwiperSlide>
             <div>

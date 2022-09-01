@@ -5,7 +5,6 @@
 @layer components {
   .container-spacing {
     @apply container px-8 mx-auto py-8 md:py-[80px];
-   
   }
 
   .nav_btn {
@@ -14,10 +13,13 @@
 }
 .header__line {
   @apply relative pb-5 mt-6;
-}
-.header__line::before {
-  content: "";
-  @apply absolute -top-3 right-0 bg-mainBlue w-14 h-1;
+  &::before {
+    content: "";
+    @apply absolute -top-3 right-0 bg-mainBlue w-14 h-1;
+    [dir="ltr"] & {
+      @apply left-0;
+    }
+  }
 }
 .hero-bg {
   position: relative;
